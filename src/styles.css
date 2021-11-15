@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif; 
-    color:#fff
+    
 }
 
 body {
@@ -9,6 +9,7 @@ body {
     background: linear-gradient(139deg, rgb(0, 0, 0) 0%, rgb(37, 20, 8) 9%, rgb(46, 5, 19) 27%, rgb(54, 12, 18) 63%, rgb(2, 0, 0) 90%);
     margin: 0;
     padding: 0;
+    color:#fff; 
 }
 
 /* Smartphones (portrait and landscape) -------------- */
