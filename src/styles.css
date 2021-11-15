@@ -1,0 +1,222 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif; 
+    color:#fff
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    background: linear-gradient(139deg, rgb(0, 0, 0) 0%, rgb(37, 20, 8) 9%, rgb(46, 5, 19) 27%, rgb(54, 12, 18) 63%, rgb(2, 0, 0) 90%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Smartphones (portrait and landscape) -------------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 768px) {
+    header {
+        text-align: center;
+        min-height: max-content;
+    }
+    
+    header h1 { margin: 0; }
+    
+    .search {
+        border-radius: 6px;
+        border: none;
+        color: #030202;
+        background: #faeff0;
+        padding: 10px;
+    }
+    
+    .artist-name-container {
+        overflow: hidden;
+        height: 375px;
+        background: #C33764;  /*fallback color */
+        background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8));
+        background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8)); /*The least supported option.*/
+    }
+    
+    .artist-results {
+        background-color: #030202;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+    
+    }
+    
+    .artist-results-item {
+        margin: 1em;
+    }
+    
+    .artist-name {
+        text-align: left;
+        position: absolute;
+        bottom: 45%;
+        left: 1rem;
+        font-size: 48px;
+    }
+    
+    .artist-img {
+        opacity: 0.5;
+        object-fit: cover;
+        width: 100%;
+        height: 110%;
+    }
+    
+    .artist-album-img {
+        text-align: center;
+    }
+    
+    .artist-album-img img { 
+        border-radius: 20px;
+        margin-right: 1em;
+     }
+    
+    .artist-hits {
+        display: flex;
+        display: column;
+        overflow-y: scroll;
+        padding: 1em;
+    }
+}
+
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen and (min-device-width : 768px) and (max-device-width : 1224px) {
+    header {
+        text-align: center;
+        min-height: max-content;
+    }
+    
+    header h1 { margin: 0; }
+    
+    .search {
+        border-radius: 6px;
+        border: none;
+        color: #030202;
+        background: #faeff0;
+        padding: 10px;
+    }
+    
+    .artist-name-container {
+        overflow: hidden;
+        height: 375px;
+        background: #C33764;  /*fallback color */
+        background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8));
+        background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8)); /*The least supported option.*/
+    }
+    
+    .artist-results {
+        background-color: #030202;
+        border-radius: 20px 20px 0 0;
+        position: relative;
+    
+    }
+    
+    .artist-results-item {
+        margin: 1em;
+    }
+    
+    .artist-name {
+        text-align: left;
+        position: absolute;
+        bottom: 45%;
+        left: 1rem;
+        font-size: 48px;
+    }
+    
+    .artist-img {
+        opacity: 0.5;
+        object-fit: cover;
+        width: 100%;
+        height: 110%;
+    }
+    
+    .artist-album-img {
+        text-align: center;
+    }
+    
+    .artist-album-img img { 
+        border-radius: 20px;
+        margin-right: 1em;
+     }
+    
+    .artist-hits {
+        display: flex;
+        display: column;
+        overflow-y: scroll;
+        padding: 1em;
+    }
+    }
+
+    /* Desktop  and laptops ----------------- */
+@media only screen and (min-width: 1224px) {
+
+    header {
+        position: fixed;
+        top: 1rem;
+        left: 3rem;
+        text-align: center;
+        min-height: max-content;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: 20vw 60vw 20vw;
+        max-width: 100vw;
+        overflow: hidden;
+    
+    }
+    
+    .item {
+        background-color: #802c2c;
+        background: inherit;
+        
+    }
+
+    .artist-results {
+        background-color: #030202;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        max-width: max-content;
+    }
+
+    .artist-name-container {
+        overflow: hidden;
+        height: 15%;
+        background: #C33764;  /*fallback color */
+        background: -webkit-linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8));
+        background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(59, 13, 28, 0.8)); /*The least supported option.*/
+    }
+    
+    .artist-name {
+        font-size: 64px;
+        white-space: nowrap;
+        position: absolute;
+        top: 12%;
+        left: 1rem;
+        margin: 0;
+    
+    }
+
+    .artist-img {
+        opacity: 0.5;
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .artist-hits {
+        display: flex;
+        display: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 1em;
+        overflow: hidden;
+    }
+
+    .artist-album-img img { 
+        border-radius: 20px;
+        margin: 1rem;
+     }
+}
