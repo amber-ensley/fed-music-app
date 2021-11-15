@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import ArtistSongComponent from "./ArtistSongComponent";
-// import "./styles.css";
 
 const App = () => {
 
