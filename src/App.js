@@ -8,7 +8,7 @@ const fetchArtist = (search, callback) => {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "genius.p.rapidapi.com",
-		"x-rapidapi-key": "4c6ed27fa5msh00e524c73748cc6p116442jsn2e9aabe57eee"
+		"x-rapidapi-key": ""
 	}
     })
     .then(response => response.json())
