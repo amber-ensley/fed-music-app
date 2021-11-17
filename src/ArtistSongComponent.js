@@ -11,13 +11,7 @@ const ArtistSongComponent = (props) => {
             <figcaption>{props.songTitle}</figcaption>
         </figure>
     )
-    // return React.createElement("figure", { className: "artist-album-img" }, [
-    //   React.createElement("img", {
-    //     src: props.albumImageUrl,
-    //     alt: props.description,
-    //   }),
-    //   React.createElement("figcaption", {}, props.songTitle),
-    // ]);
+
   };
 
   export default ArtistSongComponent;
