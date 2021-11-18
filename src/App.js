@@ -8,7 +8,7 @@ const fetchArtist = (search, callback) => {
 	"method": "GET",
 	"headers": {
 		"x-rapidapi-host": "genius.p.rapidapi.com",
-		"x-rapidapi-key": ""
+		"x-rapidapi-key": "4c6ed27fa5msh00e524c73748cc6p116442jsn2e9aabe57eee"
 	}
     })
     .then(response => response.json())
@@ -20,7 +20,7 @@ const fetchArtist = (search, callback) => {
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [artistName, setArtistName] = useState("Kendrick Lamar");
+  const [artistName, setArtistName] = useState("");
   const [artistImgUrl, setArtistImgUrl] = useState("https://images.genius.com/f08637c8cfdeaab4dfbf0631424001ec.640x640x1.jpg");
   const [artistHits, setArtistHits] = useState([]);
 
