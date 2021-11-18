@@ -20,8 +20,8 @@ const fetchArtist = (search, callback) => {
 
 const App = () => {
   const [searchTerm, setSearchTerm] = useState("");
-  const [artistName, setArtistName] = useState("Kendrick Lamar");
-  const [artistImgUrl, setArtistImgUrl] = useState("https://images.genius.com/f08637c8cfdeaab4dfbf0631424001ec.640x640x1.jpg");
+  const [artistName, setArtistName] = useState("");
+  const [artistImgUrl, setArtistImgUrl] = useState("https://i.pinimg.com/originals/9f/a4/d9/9fa4d9bf6bbd6f40371308122b24243d.jpg");
   const [artistHits, setArtistHits] = useState([]);
 
   const debouncedSearchTerm = useDebounce(searchTerm, 500);
