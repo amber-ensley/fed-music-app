@@ -78,12 +78,24 @@ const App = () => {
     
             <div className="artist-hits"> 
                 {artistHits.length > 0 ? artistHits.map(hit => (
-                    <ArtistSongComponent
-                    key={hit.result.id} 
-                    songTitle={hit.result.full_title}
-                    albumImageUrl={hit.result.song_art_image_thumbnail_url}
-                    description={hit.result.full_title} />)) : "Search to load song titles"}
-                
+                    ( hit.result.id % 2 === 0  ?
+                        <div className="col1">
+                            <ArtistSongComponent
+                            key={hit.result.id} 
+                            songTitle={hit.result.full_title}
+                            albumImageUrl={hit.result.song_art_image_thumbnail_url}
+                            description={hit.result.full_title} />
+                        </div>
+                        :
+                        <div className="col2">
+                            <ArtistSongComponent
+                            key={hit.result.id} 
+                            songTitle={hit.result.full_title}
+                            albumImageUrl={hit.result.song_art_image_thumbnail_url}
+                            description={hit.result.full_title} />
+                        </div>
+                    )
+                    )) : "Search to load song titles"}
             </div>
     
         </div>
