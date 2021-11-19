@@ -209,11 +209,11 @@ body {
 
     .artist-hits {
         display: grid;
-        grid-template-areas: "column1 column2";
+        grid-template-areas: "col1 col2";
     }
 
     .col1 {
-        grid-area: "column1";
+        grid-area: "col1";
         display: flex;
         display: column;
         flex-wrap: nowrap;
@@ -223,7 +223,7 @@ body {
     }
 
     .col2 {
-        grid-area: "column2";
+        grid-area: "col2";
         display: flex;
         display: column;
         flex-wrap: nowrap;
